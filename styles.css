@@ -20,62 +20,7 @@ p {
 }
 
 footer {
-  position: absolute;
-  left: 47%;
-  margin-top: 250px;
-  margin-bottom: 0px;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-.card {
-  height: 300px;
-  width: 325px;
-  background-color: hsl(0, 0%, 98%);
-  border: solid 0.5px;
-  border-color: hsl(0, 0%, 98%);
-  border-radius: 0.5rem;
-  box-shadow: -1px 5px 15px hsl(229, 6%, 66%);
-  padding: 0 40px 0 30px;
-  margin: 30px;
-}
-
-.c1 {
-  border-top-color: hsl(180, 62%, 55%);
-  border-top-width: 5px;
-  float: left;
-  position: relative;
-  top: 143px;
-  left: 285px;
-}
-
-.c2 {
-  border-top-color: hsl(0, 78%, 62%);
-  border-top-width: 5px;
-  margin: auto;
-  margin-top: 70px;
-}
-
-.c3 {
-  border-top-color: hsl(34, 97%, 64%);
-  border-top-width: 5px;
-  margin: auto;
-  margin-top: 40px;
-}
-
-.c4 {
-  border-top-color: hsl(212, 86%, 64%);
-  border-top-width: 5px;
-  float: right;
-  position: relative;
-  bottom: 510px;
-  right: 285px;
+  margin: 0 auto;
 }
 
 .bold {
@@ -95,7 +40,69 @@ footer {
 }
 
 .subtitle {
-  padding: 0 625px;
+  margin: auto;
+  max-width: 625px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Card Styles for Desktop */
+
+.card {
+  height: 300px;
+  width: 325px;
+  background-color: hsl(0, 0%, 98%);
+  border: solid 0.5px;
+  border-color: hsl(0, 0%, 98%);
+  border-radius: 0.5rem;
+  border-top-width: 5px;
+  box-shadow: -1px 5px 15px hsl(229, 6%, 66%);
+  padding: 0 40px 0 30px;
+  margin: 30px;
+}
+
+@media (min-width: 1300px) {
+  .card-section {
+    height: 750px;
+  }
+
+  .c1 {
+    border-top-color: hsl(180, 62%, 55%);
+    margin: 0 auto;
+    position: relative;
+    right: 425px;
+    top: 225px;
+  }
+
+  .c2 {
+    border-top-color: hsl(0, 78%, 62%);
+    margin: 0 auto;
+    position: relative;
+    bottom: 250px;
+  }
+
+  .c3 {
+    border-top-color: hsl(34, 97%, 64%);
+    margin: 0 auto;
+    position: relative;
+    bottom: 225px;
+  }
+
+  .c4 {
+    border-top-color: hsl(212, 86%, 64%);
+    margin: 0 auto;
+    position: relative;
+    left: 425px;
+    bottom: 690px;
+  }
 }
 
 .supervisor-img {
@@ -120,4 +127,47 @@ footer {
   position: relative;
   margin-left: 270px;
   margin-top: 60px;
+}
+
+/* MOBILE FORMATTING */
+
+/* Card Styles on Mobile */
+
+@media (max-width: 1299px) {
+  .subtitle {
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 500px;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .c1 {
+    border-top-color: hsl(180, 62%, 55%);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .c2 {
+    border-top-color: hsl(0, 78%, 62%);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .c3 {
+    border-top-color: hsl(34, 97%, 64%);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .c4 {
+    border-top-color: hsl(212, 86%, 64%);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  }
 }
